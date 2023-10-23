@@ -1,0 +1,22 @@
+﻿{
+  "AppSettings": {
+    "ConsoleTitle": "Worker Console Template"
+  },
+  "ConnectionStrings": "Host=localhost;Database=bot;Username=aum;Password=khadsl5005",
+  "PingerSettings":{
+    "BaseUrls": [ "https://www.propornot.com/p/the-list.html?zx=9ba22c1d32fe3107"],
+    "TargetUrls":[]
+  },
+  "Serilog": {
+    "MinimumLevel": "Debug",
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "theme": "Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme::Literate, Serilog.Sinks.Console",
+          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} {Level:u3} {Message:lj} {NewLine}{Exception}"
+        }
+      }
+    ]
+  }
+}

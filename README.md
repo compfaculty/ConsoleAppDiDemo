@@ -1,0 +1,1 @@
+# Simple example of DI/Services/Background Task in console app
